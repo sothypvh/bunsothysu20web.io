@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/use_boostrap2.css">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow p-4">
+        <h5 class="text-center">USING FORM BOOTSTRAP</h5>
+
+        <div id="success-message" class="alert alert-success d-none position-relative">
+            <strong>Form Submitted!</strong><br>
+            <span id="form-data"></span>
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-2" id="close-alert"></button>
+        </div>
+
+        <form id="userForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="currency" class="form-label">Salary</label>
+                <input type="currency" class="form-control" id="salary" placeholder="Enter Your Salary" required>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Hire Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/use_boostrap2.js"></script>
+
+</body>
+</html>
